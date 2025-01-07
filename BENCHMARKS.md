@@ -69,7 +69,7 @@ file size: 768.00MB
 peak sys mem: 1014.09MB
 ```
 
-* pebble
+* pebble - 1.x
 ```
 arch: windows - amd64
 engine: pebble
@@ -84,6 +84,23 @@ get: 18.187s    109968 ops/s
 put + get: 27.946s
 file size: 229.03MB
 peak sys mem: 538.12MB
+```
+
+* pebble - 2.0
+```
+arch: windows - amd64
+engine: pebble
+keys: 2000000
+key size: 16-64
+value size 128-512
+concurrency: 5
+
+put: 14.916s    134088 ops/s
+get: 17.600s    113634 ops/s
+
+put + get: 32.516s
+file size: 229.41MB
+peak sys mem: 574.12MB
 ```
 
 * pogreb

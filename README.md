@@ -49,7 +49,7 @@ Fork of https://github.com/lotusdblabs/kvstore-bench which is a fork of https://
 * goleveldb
 * ~~lotusdb~~ Currently broken.
 * nutsdb
-* pebble - Running v1.1.3 instead of v2.0.0
+* pebble
 * pogreb
 * rosedb
 * bitcask
