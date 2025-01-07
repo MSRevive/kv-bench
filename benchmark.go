@@ -157,6 +157,7 @@ func benchmark(opts options) error {
 		return err
 	}
 
+	fmt.Printf("arch: %s - %s\n", runtime.GOOS, runtime.GOARCH)
 	fmt.Printf("engine: %s\n", opts.engine)
 	fmt.Printf("keys: %d\n", opts.numKeys)
 	fmt.Printf("key size: %d-%d\n", opts.minKeySize, opts.maxKeySize)
