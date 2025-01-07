@@ -15,7 +15,18 @@ func newNutsDB(path string) (Store, error) {
 	options.SyncEnable = false
 
 	db, err := nutsdb.Open(options)
-	return &nutsdbStore{db: db}, err
+	if err != nil {
+		return nil, err
+	}
+	
+	err = db.Update(func(tx *nutsdb.Tx) error {
+		return tx.NewKVBucket("bucket")
+	})
+	if err != nil {
+		return nil, err
+	}
+
+	return &nutsdbStore{db: db}, nil
 }
 
 func (n nutsdbStore) Put(key []byte, value []byte) error {
