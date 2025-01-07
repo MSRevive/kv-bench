@@ -10,7 +10,7 @@ require (
 	github.com/pkg/profile v1.7.0
 	github.com/rosedblabs/rosedb/v2 v2.3.9
 	github.com/syndtr/goleveldb v1.0.0
-	go.etcd.io/bbolt v1.3.8
+	go.etcd.io/bbolt v1.3.11
 	golang.org/x/sync v0.10.0
 )
 
