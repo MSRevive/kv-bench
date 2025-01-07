@@ -119,3 +119,20 @@ put + get: 24.411s
 file size: 786.18MB
 peak sys mem: 864.77MB
 ```
+
+* bitcask
+```
+arch: windows - amd64
+engine: bitcask
+keys: 2000000
+key size: 16-64
+value size 128-512
+concurrency: 5
+
+put: 38.794s    51554 ops/s
+get: 3.040s     657841 ops/s
+
+put + get: 41.834s
+file size: 839.22MB
+peak sys mem: 3.37GB
+```

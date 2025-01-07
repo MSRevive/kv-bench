@@ -52,6 +52,7 @@ Fork of https://github.com/lotusdblabs/kvstore-bench which is a fork of https://
 * pebble - Running v1.1.3 instead of v2.0.0
 * pogreb
 * rosedb
+* bitcask
 
 ## Usage
 ```bash
