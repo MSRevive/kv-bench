@@ -47,7 +47,7 @@ Fork of https://github.com/lotusdblabs/kvstore-bench which is a fork of https://
 * badger
 * bbolt
 * goleveldb
-* ~~lotusdb~~ Currently broken.
+* lotusdb
 * nutsdb
 * pebble
 * pogreb

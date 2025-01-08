@@ -7,7 +7,7 @@ import (
 func newLotusDB(path string) (Store, error) {
 	options := lotusdb.DefaultOptions
 	options.DirPath = path
-	options.BlockCache = 0
+	//options.BlockCache = 0
 	db, err := lotusdb.Open(options)
 	return &lotusdbStore{db: db}, err
 }
@@ -17,7 +17,7 @@ type lotusdbStore struct {
 }
 
 func (l *lotusdbStore) Put(key []byte, value []byte) error {
-	return l.db.Put(key, value, nil)
+	return l.db.Put(key, value)
 }
 
 func (l *lotusdbStore) Get(key []byte) ([]byte, error) {
@@ -25,7 +25,7 @@ func (l *lotusdbStore) Get(key []byte) ([]byte, error) {
 }
 
 func (l *lotusdbStore) Delete(key []byte) error {
-	return l.db.Delete(key, nil)
+	return l.db.Delete(key)
 }
 
 func (l *lotusdbStore) Close() error {

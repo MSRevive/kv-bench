@@ -4,12 +4,12 @@ go 1.22
 
 require (
 	github.com/akrylysov/pogreb v0.10.2
-	github.com/cockroachdb/pebble v0.0.0-20250106165329-28edac9f80a0
+	github.com/cockroachdb/pebble v0.0.0-20250107203717-5a315b39914b
 	github.com/dgraph-io/badger/v4 v4.5.0
-	github.com/lotusdblabs/lotusdb/v2 v2.1.1-0.20241014064852-d2bad43d7c6b
+	github.com/lotusdblabs/lotusdb/v2 v2.1.1-0.20250108075036-f6c86b8c9328
 	github.com/nutsdb/nutsdb v1.0.4
 	github.com/pkg/profile v1.7.0
-	github.com/rosedblabs/rosedb/v2 v2.3.9
+	github.com/rosedblabs/rosedb/v2 v2.3.10-0.20250107024943-def759387b75
 	github.com/syndtr/goleveldb v1.0.0
 	go.etcd.io/bbolt v1.3.11
 	go.mills.io/bitcask/v2 v2.1.1
@@ -50,6 +50,7 @@ require (
 	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/lotusdblabs/bbolt v1.3.9-0.20250108061345-78c23c59588d // indirect
 	github.com/mattetti/filebuffer v1.0.1 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/onsi/ginkgo v1.13.0 // indirect

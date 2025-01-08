@@ -52,6 +52,23 @@ file size: 714.41MB
 peak sys mem: 570.37MB
 ```
 
+* lotusdb
+```
+arch: windows - amd64
+engine: lotusdb
+keys: 2000000
+key size: 16-64
+value size 128-512
+concurrency: 5
+
+put: 15.264s    131024 ops/s
+get: 9.070s     220503 ops/s
+
+put + get: 24.334s
+file size: 1.47GB
+peak sys mem: 1.56GB
+```
+
 * nutsdb
 ```
 arch: windows - amd64
